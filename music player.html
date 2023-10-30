@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="music player.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <img src="music player_image.jpg" alt="">
+      <div class="text">
+      <h2 id="songTitle">Christmas Lights</h2>
+      <h4 id="artist">Zach Seabaugh</h4>
+      </div>
+      <audio id="song">
+        <source src = "music player_Christmas_Lights.mp3" type="audio/mpeg" id="song1">
+        <source src="music player_song2.mp3" type="audio" id="song2">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward" id="backward"></i></div>
+        <div><i class="fa-solid fa-play" id="play"></i></div>
+        <div><i class="fa-solid fa-forward" id="forward"></i></div>
+      </div>
+    </div>
+
+    <script src="music player.js"></script>
+  </body>
+</html>
